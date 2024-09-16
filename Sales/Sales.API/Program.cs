@@ -10,7 +10,6 @@ builder.Services.AddDbContext<DataContext>(x => x.UseSqlServer("name=ConnectionS
 builder.Services.AddTransient<SeedDb>();
 
 var app = builder.Build();
-
 SeedData(app);
 
  void SeedData(WebApplication app)

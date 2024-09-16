@@ -21,7 +21,7 @@ namespace Sales.API.Data
 
         private async Task CheckCountriesAsync()
         {
-            if(_context.Countries.Any()) 
+            if(!_context.Countries.Any()) 
             {
                 _context.Countries.Add(new Country { Name = "Colombia" });
                 _context.Countries.Add(new Country { Name = "Perú" });
